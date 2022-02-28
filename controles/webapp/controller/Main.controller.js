@@ -25,6 +25,8 @@ sap.ui.define([
                 visibleTabInfGeneral: true,
                 visiblebtnShowTabMedidas: false,
                 visiblebtnHideTabMedidas: true,
+                visiblebtnShowTabGeneral: false,
+                visiblebtnHideTabGeneral: true,
                 
             });
 

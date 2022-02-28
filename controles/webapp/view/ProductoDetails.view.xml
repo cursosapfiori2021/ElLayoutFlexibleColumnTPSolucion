@@ -10,6 +10,18 @@
         
  <m:Panel id="_IDGenPanel1">
 
+  <m:Button 
+   id="btnShowTabGeneral" 
+   text="{i18n>showTabGeneral}" 
+   visible="{jsonModelConfig>/visiblebtnShowTabGeneral}" 
+   press="onShowTabGeneral"/>
+
+
+   <m:Button id="btnHideTabGeneral" 
+   text="{i18n>hideTabGeneral}" 
+   visible="{jsonModelConfig>/visiblebtnHideTabGeneral}" 
+   press="onHideTabGeneral"/>  
+
    <m:Button 
    id="btnShowTabMedidas" 
    text="{i18n>showTabMedidas}" 
@@ -26,7 +38,8 @@
 
    <m:IconTabBar id="_IDGenIconTabBar1">
         <m:items>
-            <m:IconTabFilter id="_IDGenIconTabFilter1" text="{i18n>InformacionGeneral}" visible="{jsonModelConfig>/visibleTabInfGeneral}">
+            <m:IconTabFilter id="_IDGenIconTabFilter1" text="{i18n>InformacionGeneral}" 
+            visible="{jsonModelConfig>/visibleTabGeneral}">
 	          <ObjectPageLayout id="ObjectPageLayout"
 					 showTitleInHeaderContent="true"
 					alwaysShowContentHeader="false"

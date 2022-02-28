@@ -11,7 +11,7 @@
             <pages>
                 <Page id="page33" title="{i18n>title}">
                     <content>
-                       <f:FlexibleColumnLayout id="fcl" backgroundDesign="Solid" layout="OneColumn">
+                       <f:FlexibleColumnLayout id="fcl" backgroundDesign="Solid" layout="ThreeColumnsMidExpanded">
                             <f:beginColumnPages>
                                  
                                  <mvc:XMLView id="masterProductosView" viewName="ns.controles.view.MasterProductos"></mvc:XMLView> 

@@ -25,5 +25,22 @@ sap.ui.define([
             oJSONModelConfig.setProperty("/visiblebtnHideTabMedidas", false);
           
         },
+
+        onShowTabGeneral: function () {
+            var oJSONModelConfig = this.getView().getModel("jsonModelConfig");
+            oJSONModelConfig.setProperty("/visibleTabGeneral", true);
+            oJSONModelConfig.setProperty("/visiblebtnShowTabGeneral", false);
+            oJSONModelConfig.setProperty("/visiblebtnHideTabGeneral", true);
+          
+
+        },
+
+        onHideTabGeneral: function (){
+            var oJSONModelConfig = this.getView().getModel("jsonModelConfig");
+            oJSONModelConfig.setProperty("/visibleTabGeneral", false);
+            oJSONModelConfig.setProperty("/visiblebtnShowTabGeneral",true);
+            oJSONModelConfig.setProperty("/visiblebtnHideTabGeneral", false);
+          
+        },
     });
 }); 
